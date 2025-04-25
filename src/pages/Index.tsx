@@ -5,11 +5,15 @@ import { EnvironmentalMetrics } from "@/components/EnvironmentalMetrics";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-      <div className="container mx-auto py-8 px-4">
-        <DashboardHeader />
-        <AlertsOverview />
-        <EnvironmentalMetrics />
+    <div className="min-h-screen bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-slate-900 via-purple-900 to-slate-900">
+      <div className="min-h-screen backdrop-blur-[2px] bg-black/10">
+        <div className="container mx-auto py-8 px-4 space-y-8">
+          <DashboardHeader />
+          <div className="grid gap-8 lg:grid-cols-2">
+            <AlertsOverview />
+            <EnvironmentalMetrics />
+          </div>
+        </div>
       </div>
     </div>
   );
